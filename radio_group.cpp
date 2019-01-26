@@ -23,7 +23,7 @@ int main()
 	for(auto &radio_button : radio_buttons)
 	{
 		// add a click handler to the button
-		radio_button->events().click([&](const nana::arg_click &arg)
+		radio_button->events().click([&]
 		{
 			std::cout << "button " << rg.checked() << " clicked - " << radio_button->caption() << std::endl;
 		});
