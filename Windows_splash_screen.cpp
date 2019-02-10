@@ -57,9 +57,11 @@ int main()
 
 	splash.show();
 	splash.events().unload([&] { fm.show(); });
-	nana::timer timer_;
-	timer_.elapse([&] { splash.close(); });
-	timer_.interval(3000); // the splash window will be displayed for 3000 milliseconds
-	timer_.start();
+	
+	timer t;
+	t.elapse([&] { splash.close(); });
+	t.interval(3000); // the splash window will be displayed for 3000 milliseconds
+	t.start();
+	
 	exec();
 }
