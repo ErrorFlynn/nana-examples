@@ -1,6 +1,6 @@
 /*
 	This Windows-only example demonstrates how to implement a simple splash screen that displays 
-	an image from a Bitmap resource. It's the user's reponsibility to build an executable that
+	an image from a Bitmap resource. It's the user's responsibility to build an executable that
 	contains a Bitmap resource, with whatever IDE or toolchain they're using (how to do that is 
 	beyond the scope of this example). I have used Visual Studio to build and test the example.
 */
