@@ -1,3 +1,11 @@
+/*
+	In nana, a radio button is just a `checkbox` object that has had `checkbox::radio(true)` called on it. In other
+	words, it looks like a radio button, but otherwise behaves exactly like a checkbox. If you want to have radio group
+	logic applied to several checkboxes, that logic has to be implemented by adding a `checked` event handler to each
+	`checkbox`, which unchecks all other checkboxes in the group when triggered. That's what the `radio_group` class
+	does, it's a convenient way to "link" several checkboxes into a radio group.
+*/
+
 #include <nana/gui/wvl.hpp>
 #include <nana/gui/widgets/checkbox.hpp>
 #include <vector>
