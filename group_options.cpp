@@ -36,6 +36,9 @@ int main()
 
 		option->events().click([&]
 		{
+			// group::option returns the index of the currently selected option,
+			// which is the radio button that was just clicked when this event
+			// handler is called
 			std::cout << grp.option() << std::endl;
 		});
 	}
