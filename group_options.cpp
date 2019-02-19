@@ -29,9 +29,9 @@ int main()
 	{
 		/*
 			When a checkbox is clicked, print which index it has in the radio group.
-			The event handler must be attached to each checkbox rather than any of 
-			the parents (group or form), because events don't propagate upwards to 
-			a widget's parents.
+			The event handler must be attached to each checkbox rather than the parent
+			(group) or ancestors (form), because events don't propagate upwards to 
+			a widget's parent or ancestors.
 		*/
 
 		option->events().click([&]
